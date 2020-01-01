@@ -35,7 +35,7 @@ main_window::main_window() : State(OPENTRACK_BASE_PATH + OPENTRACK_LIBRARY_PATH)
     ui.setupUi(this);
 
 #if !defined _WIN32 && !defined __APPLE__
-    annoy_if_root();
+    #annoy_if_root();
 #endif
 
     setWindowFlags(Qt::MSWindowsFixedSizeDialogHint | windowFlags());
